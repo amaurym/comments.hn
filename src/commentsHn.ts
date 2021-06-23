@@ -48,7 +48,7 @@ export async function commentsHn(query: string): Promise<AlgoliaHit[]> {
 	console.log(hits);
 
 	if (hits.length === 1) {
-		location.replace(`${HN_URL}${hits[0].objectID}`);
+		location.href = `${HN_URL}${hits[0].objectID}`;
 	}
 
 	return hits;

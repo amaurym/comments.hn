@@ -78,7 +78,7 @@
 				rel="noopener noreferrer"
 				target="_blank">open-source</a
 			>
-			website with no ads, no trackers, no React. TODOkb gzipped. Its business
+			website with no ads, no trackers, no React. 64kb gzipped. Its business
 			model is
 			<a
 				href="https://github.com/sponsors/amaurym"
