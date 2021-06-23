@@ -18,8 +18,8 @@
 <main>
   <h1>{websiteName}</h1>
   <p>
-    Preprend <code><mark><strong>{websiteName}?q=</strong></mark></code> to your
-    URL bar to see Hacker News comments about any website.
+    Preprend <code><mark><strong>{websiteName}?q=</strong></mark></code> to any website
+    to see its Hacker News comments.
   </p>
   <div>
     <p>
@@ -67,8 +67,16 @@
     <small
       ><strong>{websiteName}</strong> is an open-source website with no ads, no
       trackers, no React. TODOkb gzipped. Its business model is
-      <a>donations</a>. Copyright
-      <a href="https://github.com/amaurym" target="_blank">@amaurym</a> 2021.
+      <a
+        href="https://github.com/sponsors/amaurym"
+        rel="noopener noreferrer"
+        target="_blank">donations</a
+      >. Copyright
+      <a
+        href="https://github.com/amaurym"
+        rel="noopener noreferrer"
+        target="_blank">@amaurym</a
+      > 2021.
     </small>
   </footer>
 </main>
