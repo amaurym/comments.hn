@@ -7,8 +7,8 @@
 	"scripts": {
 		"build": "rollup -c",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"deploy": "yarn build && cd public && surge",
 		"dev": "rollup -c -w",
-		"ghpages": "yarn build && gh-pages -d public",
 		"lint": "tsc --noEmit && eslint . --ext js,ts,tsx",
 		"start": "sirv public --no-clear"
 	},
@@ -19,7 +19,6 @@
 		"@rollup/plugin-node-resolve": "^11.0.0",
 		"@rollup/plugin-typescript": "^8.0.0",
 		"@tsconfig/svelte": "^2.0.0",
-		"gh-pages": "^3.2.3",
 		"rollup": "^2.3.4",
 		"rollup-plugin-css-only": "^3.1.0",
 		"rollup-plugin-livereload": "^2.0.0",

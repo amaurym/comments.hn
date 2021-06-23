@@ -24,7 +24,9 @@
 	<div>
 		<p>
 			For example, if you're reading Ciechanowski's <a
-				href="https://ciechanow.ski/gears">article</a
+				href="https://ciechanow.ski/gears"
+				rel="noopener noreferrer"
+				target="_blank">article</a
 			> on gears, just do:
 		</p>
 		<table>
