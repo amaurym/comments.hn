@@ -1,3 +1,8 @@
+// This whole file `whatHnSays.ts` is heavily based on:
+// https://raw.githubusercontent.com/pinoceniccola/what-hn-says-webext/9dbddf3e4274d169dc48396b2698d72b9aecf36b/popup.js
+// where I modified and added TypeScript typings.
+// Copyright Pino Ceniccola. MIT License.
+
 import type { AlgoliaHit } from './commentsHn';
 
 const BLACKLISTED_PARAMS = ['utm_', 'clid'];

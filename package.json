@@ -8,7 +8,7 @@
 		"build": "rollup -c",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"dev": "rollup -c -w",
-		"ghpages": "yarn build && gh-pages public",
+		"ghpages": "yarn build && gh-pages -d public",
 		"lint": "tsc --noEmit && eslint . --ext js,ts,tsx",
 		"start": "sirv public --no-clear"
 	},
