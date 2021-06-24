@@ -2,9 +2,8 @@
 	import { commentsHn, parseQueryParams } from './commentsHn';
 	import type { AlgoliaHit } from './commentsHn';
 	import Hit from './Hit.svelte';
-	import pkgJSON from '../package.json';
 
-	const websiteName = pkgJSON.name; // "comments.hn"
+	const WEBSITE_NAME = 'MootHN';
 	const parsedQuery = parseQueryParams(location.search);
 
 	let hits: AlgoliaHit[] = [];
@@ -16,10 +15,10 @@
 </script>
 
 <main>
-	<h1>{websiteName}</h1>
+	<h1>{WEBSITE_NAME}</h1>
 	<p>
-		Preprend <code><mark><strong>{websiteName}?q=</strong></mark></code> to any
-		website to see its Hacker News comments.
+		Preprend <code><mark><strong>{WEBSITE_NAME}?q=</strong></mark></code> to
+		any website to see its Hacker News comments.
 	</p>
 	<div>
 		<p>
@@ -36,7 +35,7 @@
 					<td>
 						<strong>
 							<code
-								><mark>{websiteName}?q=</mark
+								><mark>{WEBSITE_NAME}?q=</mark
 								>https://ciechanow.ski/gears</code
 							></strong
 						>
@@ -52,7 +51,7 @@
 		<h2>Aaaaaahhhhh! An error.</h2>
 		<p>
 			Please create an <a
-				href="https://github.com/amaurym/comments.hn/issues"
+				href="https://github.com/amaurym/moothn.io/issues"
 				rel="noopener noreferrer"
 				target="_blank">issue</a
 			> on Github with the following text:
@@ -74,9 +73,9 @@
 	<footer>
 		<br />
 		<small
-			><strong>{websiteName}</strong> is an
+			><strong>{WEBSITE_NAME}</strong> is an
 			<a
-				href="https://github.com/amaurym/comments.hn"
+				href="https://github.com/amaurym/moothn.io"
 				rel="noopener noreferrer"
 				target="_blank">open-source</a
 			>
