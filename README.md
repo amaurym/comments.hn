@@ -1,6 +1,6 @@
 [![Actions Status](https://github.com/amaurym/comments.hn/workflows/pr/badge.svg)](https://github.com/amaurym/comments.hn/actions)
 
-# [`comments.hn`](https://comments.hn)
+# [Comments.hn](https://comments.hn)
 
 Prepend `comments.hn?q=` to any website to see its Hacker News comments.
 
@@ -14,7 +14,7 @@ For example, if you're reading Ciechanowski's [article](https://ciechanow.ski/ge
 
 This website is heavily based on the excellent Web Extension [What HN Says](https://github.com/pinoceniccola/what-hn-says-webext), some code par. It works well on desktop, but no on mobile.
 
-`comments.hn` is the easiest way I can think of to simulate the same experience on mobile and tablets.
+Comments.hn is the easiest way I can think of to simulate the same experience on mobile and tablets.
 
 ## Run Locally
 
@@ -24,7 +24,7 @@ Run the following commands
 git clone https://github.com/amaurym/comments.hn
 cd comments.hn
 yarn install
-yarn dev # The website should be running on http://localhost:5000
+yarn dev # The website will be running on http://localhost:5000
 ```
 
 ## Credits
