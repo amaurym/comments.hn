@@ -3,7 +3,6 @@
 	import type { AlgoliaHit } from './commentsHn';
 	import Hit from './Hit.svelte';
 
-	const WEBSITE_NAME = 'MootHN';
 	const parsedQuery = parseQueryParams(location.search);
 
 	let hits: AlgoliaHit[] = [];
@@ -15,10 +14,10 @@
 </script>
 
 <main>
-	<h1>{WEBSITE_NAME}</h1>
+	<h1>Comments.hn</h1>
 	<p>
-		Preprend <code><mark><strong>{WEBSITE_NAME}?q=</strong></mark></code> to
-		any website to see its Hacker News comments.
+		Preprend <code><mark><strong>comments.hn?q=</strong></mark></code> to any
+		website to see its Hacker News comments.
 	</p>
 	<div>
 		<p>
@@ -35,7 +34,7 @@
 					<td>
 						<strong>
 							<code
-								><mark>{WEBSITE_NAME}?q=</mark
+								><mark>comments.hn?q=</mark
 								>https://ciechanow.ski/gears</code
 							></strong
 						>
@@ -51,7 +50,7 @@
 		<h2>Aaaaaahhhhh! An error.</h2>
 		<p>
 			Please create an <a
-				href="https://github.com/amaurym/moothn.io/issues"
+				href="https://github.com/amaurym/comments.hn/issues"
 				rel="noopener noreferrer"
 				target="_blank">issue</a
 			> on Github with the following text:
@@ -71,26 +70,36 @@
 	{/if}
 
 	<footer>
-		<br />
-		<small
-			><strong>{WEBSITE_NAME}</strong> is an
-			<a
-				href="https://github.com/amaurym/moothn.io"
-				rel="noopener noreferrer"
-				target="_blank">open-source</a
-			>
-			website with no ads, no trackers, no React. 64kb gzipped. Its business
-			model is
-			<a
-				href="https://github.com/sponsors/amaurym"
-				rel="noopener noreferrer"
-				target="_blank">donations</a
-			>. Copyright
-			<a
-				href="https://github.com/amaurym"
-				rel="noopener noreferrer"
-				target="_blank">@amaurym</a
-			> 2021.
-		</small>
+		<hr />
+		<p>
+			<small>
+				<strong>Comments.hn</strong> is an
+				<a
+					href="https://github.com/amaurym/comments.hn"
+					rel="noopener noreferrer"
+					target="_blank">open-source</a
+				>
+				website with no ads, no trackers, no React. 64kb gzipped. Its business
+				model is
+				<a
+					href="https://github.com/sponsors/amaurym"
+					rel="noopener noreferrer"
+					target="_blank">donations</a
+				>. Copyright
+				<a
+					href="https://github.com/amaurym"
+					rel="noopener noreferrer"
+					target="_blank">@amaurym</a
+				> 2021.
+			</small>
+		</p>
+		<p>
+			<small>
+				To use this website as a bookmarklet, drag <a
+					href={'javascript:(function(){window.open("https://comments.hn?q="+location.href,"_blank")})()'}
+					>this link</a
+				> to your bookmarks toolbar.
+			</small>
+		</p>
 	</footer>
 </main>

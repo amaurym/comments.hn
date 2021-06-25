@@ -1,28 +1,28 @@
-[![Actions Status](https://github.com/amaurym/moothn.io/workflows/pr/badge.svg)](https://github.com/amaurym/moothn.io/actions)
+[![Actions Status](https://github.com/amaurym/comments.hn/workflows/pr/badge.svg)](https://github.com/amaurym/comments.hn/actions)
 
-# [`moothn.io`](https://moothn.io)
+# [`comments.hn`](https://comments.hn)
 
-Prepend `moothn.io?q=` to any website to see its Hacker News comments.
+Prepend `comments.hn?q=` to any website to see its Hacker News comments.
 
 For example, if you're reading Ciechanowski's [article](https://ciechanow.ski/gears) on gears, just do:
 
-> **moothn.io?q=https://ciechanow.ski/gears**
+> **comments.hn?q=https://ciechanow.ski/gears**
 
-[See demo](https://moothn.io?q=https://ciechanow.ski/gears)
+[See demo](https://comments.hn?q=https://ciechanow.ski/gears)
 
 ## Why?
 
 This website is heavily based on the excellent Web Extension [What HN Says](https://github.com/pinoceniccola/what-hn-says-webext), some code par. It works well on desktop, but no on mobile.
 
-`moothn.io` is the easiest way I can think of to simulate the same experience on mobile and tablets.
+`comments.hn` is the easiest way I can think of to simulate the same experience on mobile and tablets.
 
 ## Run Locally
 
 Run the following commands
 
 ```bash
-git clone https://github.com/amaurym/moothn.io
-cd moothn.io
+git clone https://github.com/amaurym/comments.hn
+cd comments.hn
 yarn install
 yarn dev # The website should be running on http://localhost:5000
 ```
