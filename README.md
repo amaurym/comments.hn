@@ -2,11 +2,11 @@
 
 # [Comments.hn](https://comments.hn)
 
-Prepend `comments.hn?q=` to any website to see its Hacker News comments.
+Prepend `https://comments.hn?q=` to any website to see its Hacker News comments.
 
 For example, if you're reading Ciechanowski's [article](https://ciechanow.ski/gears) on gears, just do:
 
-> **comments.hn?q=https://ciechanow.ski/gears**
+> **https://comments.hn?q=https://ciechanow.ski/gears**
 
 [See demo](https://comments.hn?q=https://ciechanow.ski/gears)
 
