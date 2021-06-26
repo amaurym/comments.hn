@@ -97,7 +97,7 @@
 		<p>
 			<small>
 				To use this website as a bookmarklet, drag <a
-					href={'javascript:(function(){window.open("https://comments.hn?q="+location.href,"_blank")})()'}
+					href={'javascript:(function(){location.href="https://comments.hn?q="+location.href})()'}
 					>this link</a
 				> to your bookmarks toolbar.
 			</small>
