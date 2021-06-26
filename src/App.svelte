@@ -5,7 +5,7 @@
 
 	const parsedQuery = parseQueryParams(location.search);
 
-	let hits: AlgoliaHit[] = [];
+	let hits: AlgoliaHit[] | undefined;
 	let err: Error;
 	parsedQuery &&
 		commentsHn(parsedQuery)
@@ -56,9 +56,9 @@
 			> on Github with the following text:
 		</p>
 		<pre>{err.message}</pre>
-	{:else if hits.length}
+	{:else if hits !== undefined}
 		<h2>
-			{hits.length} search results.
+			{hits.length || 'No'} search results.
 		</h2>
 		<p>Searching for "{parsedQuery}".</p>
 		{#each hits as hit}
