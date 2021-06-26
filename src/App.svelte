@@ -59,7 +59,9 @@
 		<pre>{err.message}</pre>
 	{:else if hits !== undefined}
 		<h2>
-			{hits.length || 'No'} search results.
+			{hits.length || 'No'} search results.{hits.length === 1
+				? ' Redirecting to HN...'
+				: ''}
 		</h2>
 		<small>Searching for "{parsedQuery}".</small>
 		{#each hits as hit}
