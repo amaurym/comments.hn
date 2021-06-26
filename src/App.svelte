@@ -5,7 +5,7 @@
 
 	const parsedQuery = parseQueryParams(location.search);
 
-	let hits: AlgoliaHit[] = [];
+	let hits: AlgoliaHit[] | undefined;
 	let err: Error;
 	parsedQuery &&
 		commentsHn(parsedQuery)
@@ -16,8 +16,9 @@
 <main>
 	<h1>Comments.hn</h1>
 	<p>
-		Preprend <code><mark><strong>comments.hn?q=</strong></mark></code> to any
-		website to see its Hacker News comments.
+		Preprend <code
+			><mark><strong>https://comments.hn?q=</strong></mark></code
+		> to any website to see its Hacker News comments.
 	</p>
 	<div>
 		<p>
@@ -34,7 +35,7 @@
 					<td>
 						<strong>
 							<code
-								><mark>comments.hn?q=</mark
+								><mark>https://comments.hn?q=</mark
 								>https://ciechanow.ski/gears</code
 							></strong
 						>
@@ -56,17 +57,17 @@
 			> on Github with the following text:
 		</p>
 		<pre>{err.message}</pre>
-	{:else if hits.length}
+	{:else if hits !== undefined}
 		<h2>
-			{hits.length} search results.
+			{hits.length || 'No'} search results.
 		</h2>
-		<p>Searching for "{parsedQuery}".</p>
+		<small>Searching for "{parsedQuery}".</small>
 		{#each hits as hit}
 			<Hit {hit} />
 		{/each}
 	{:else}
 		<h2>Loading results...</h2>
-		<p>Searching for "{parsedQuery}".</p>
+		<small>Searching for "{parsedQuery}".</small>
 	{/if}
 
 	<footer>
