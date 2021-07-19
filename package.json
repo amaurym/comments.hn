@@ -16,7 +16,7 @@
 		"@amaurym/config": "^1.3.5",
 		"@rollup/plugin-commonjs": "^19.0.0",
 		"@rollup/plugin-json": "^4.1.0",
-		"@rollup/plugin-node-resolve": "^13.0.0",
+		"@rollup/plugin-node-resolve": "^13.0.2",
 		"@rollup/plugin-typescript": "^8.0.0",
 		"@tsconfig/svelte": "^2.0.0",
 		"gh-pages": "^3.2.3",
