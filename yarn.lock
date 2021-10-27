@@ -2491,10 +2491,10 @@ svelte-preprocess@^4.0.0, svelte-preprocess@^4.9.4:
     sorcery "^0.10.0"
     strip-indent "^3.0.0"
 
-svelte@^3.42.5:
-  version "3.42.5"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.42.5.tgz#06c27ccdacebb4027b7a625633e7ca285bdff713"
-  integrity sha512-+y9ivcwMojAb0e87W7vR/UP7go44zc/3gtEciIMb8CUoIkUx6UJmPloBvVuO9MDXoGkUZM5SHr5PbLze9fJQVw==
+svelte@^3.44.0:
+  version "3.44.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.44.0.tgz#e6176cb3ad93846ddb4140e93f43098136b23f3b"
+  integrity sha512-zWACSJBSncGiDvFfYOMFGNV5zDLOlyhftmO5yOZ0lEtQMptpElaRtl39MWz1+lYCpwUq4F3Q2lTzI9TrTL+eMA==
 
 table@^6.0.9:
   version "6.7.1"
